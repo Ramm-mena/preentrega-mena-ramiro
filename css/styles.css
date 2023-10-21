@@ -48,11 +48,11 @@ header nav ul{
 }
 
 .nosotros{
-    
-    display: flex;
-    margin: 40px 40px;
-    justify-content: space-around;
-    column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
 }
 
 .nosotros div{
@@ -66,7 +66,7 @@ header nav ul{
 .nosotros-text{
     display: flex;
     flex-direction: column;
-    align-items:left;
+    align-items: column;
     justify-content: flex-start;
 }
 
@@ -79,11 +79,11 @@ header nav ul{
 }
 
 .objetivo{
-    
-    display: flex;
-    margin: 40px 40px;
-    justify-content: space-around;
-    column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
 }
 
 .objetivo div{
@@ -125,22 +125,79 @@ footer div img{
 /*media query*/
 @media screen and (min-width: 768px){
   header{
-      flex-direction: row;
-  }}
+      flex-direction: column;
+  }
 
   header nav ul{
       display: flex;
       justify-content: space-evenly;
-      gap: 10px;
-  }
+      gap: 10px; 
+    }
 
-  .contenedor{
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-  }
+  .nosotros{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      flex-direction: row;
+    } 
 
+  .nosotros div{
+      width: 500px;
+    }
 
+  .nosotros div img{
+      width: 100%;
+    }
 
+  .nosotros-text{
+      display: flex;
+      flex-direction: column;
+      align-items:left;
+      justify-content: flex-start;
+    }
+
+  .nosotros-text h2{
+      font-size: 40px;
+    }
+
+  .nosotros-text p{
+      font-size: 25px;
+    }
+  
+
+  .objetivo{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      flex-direction: row;
+    }
+    
+    .objetivo div{
+        width: 500px;
+    }
+    
+    .objetivo div img{
+        width: 100%;
+    }
+    
+    .obj-text{
+        display: flex;
+        flex-direction: column;
+        align-items:left;
+        justify-content: flex-start;
+    }
+    
+    .obj-text h2{
+        font-size: 40px;
+    }
+    
+    .obj-text p{
+        font-size: 25px;
+    }
+
+}
 
 /* navegación */
 #mainNav {
