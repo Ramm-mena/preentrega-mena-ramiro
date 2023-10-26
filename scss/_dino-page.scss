@@ -1,0 +1,75 @@
+.dinos_page{
+    .Dinos{
+        .text{
+            background-color: #806328;
+            background-image:url("../assets/images/Tierra.jpeg") ;
+            background-repeat: no-repeat;
+            background-attachment: local;
+            background-size: cover;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            color:#A2CB83;
+            font-size: 35px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div img{
+            width: 500px
+        }
+    }
+
+    .giganotosaurio{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+        div{
+            width:500px
+        }
+        div img{
+            width: 100%;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: column;
+            justify-content: flex-start;
+            h2{
+                font-size: 40px; 
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+
+    .thanatos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+        div{
+            width:500px
+        }
+        div img{
+            width: 100%;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: column;
+            justify-content: flex-start;
+            h2{
+                font-size: 40px; 
+            }
+            p{
+                font-size: 25px;
+            }
+        }   
+    }
+}

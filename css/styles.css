@@ -1,269 +1,278 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #F0EBA6;
+html {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #F0EBA6;
 }
 
-header{
-    background-color: #212529;
+header {
+  background-color: #212529;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 15px 20px;
+  align-items: center;
 }
 
-header nav ul{
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#mainNav .navbar-brand {
+  color: #ffc800;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em;
+}
+#mainNav .navbar-nav .navbar-nav.active, #mainNav .navbar-nav .navbar-nav:hover {
+  color: #ffc800;
+}
+#mainNav .nav-item {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em;
+}
+#mainNav .nav-item .nav-item.active, #mainNav .nav-item .nav-item:hover {
+  color: #ffc800;
+}
+#mainNav .nav-link {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em;
+}
+#mainNav .nav-link .nav-link.active, #mainNav .nav-link .nav-link:hover {
+  color: #ffc800;
+}
+
+.main_page .welcome .text {
+  background-color: #806328;
+  background-image: url("../assets/images/Giganotosaurio.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #A2CB83;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_page .welcome div img {
+  width: 500px;
+}
+.main_page .nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+.main_page .nosotros div {
+  width: 500px;
+}
+.main_page .nosotros div img {
+  width: 100%;
+}
+.main_page .nosotros .text {
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  justify-content: flex-start;
+}
+.main_page .nosotros .text h2 {
+  font-size: 40px;
+}
+.main_page .nosotros .text p {
+  font-size: 25px;
+}
+
+.footer {
+  background-color: #E8C57E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.footer div img {
+  width: 30px;
+}
+
+.dinos_page .Dinos .text {
+  background-color: #806328;
+  background-image: url("../assets/images/Tierra.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #A2CB83;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dinos_page .Dinos div img {
+  width: 500px;
+}
+.dinos_page .giganotosaurio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+.dinos_page .giganotosaurio div {
+  width: 500px;
+}
+.dinos_page .giganotosaurio div img {
+  width: 100%;
+}
+.dinos_page .giganotosaurio .text {
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  justify-content: flex-start;
+}
+.dinos_page .giganotosaurio .text h2 {
+  font-size: 40px;
+}
+.dinos_page .giganotosaurio .text p {
+  font-size: 25px;
+}
+.dinos_page .thanatos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+.dinos_page .thanatos div {
+  width: 500px;
+}
+.dinos_page .thanatos div img {
+  width: 100%;
+}
+.dinos_page .thanatos .text {
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  justify-content: flex-start;
+}
+.dinos_page .thanatos .text h2 {
+  font-size: 40px;
+}
+.dinos_page .thanatos .text p {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .header nav ul {
     display: flex;
-    list-style: none;
     justify-content: space-evenly;
-    padding: 15px 20px;
+    gap: 10px;
+  }
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    height: 2rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav .navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #212529;
+  }
+  #mainNav .navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  #mainNav .navbar-shrink .navbar-brand svg, #mainNav .navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item :last-child {
+    margin-right: 0;
+  }
+  .main_page .nosotros {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-
-
-.welcome .text{ 
-    background-color: #806328;
-    background-image:url("../assets/images/Giganotosaurio.jpg") ;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color: whitesmoke;
-    font-size: 35px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    
-    
-} 
-
-.welcome div img{
-    width: 500px;
-}
-
-.nosotros{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  flex-direction: column;
-}
-
-.nosotros div{
-    width: 500px;
-}
-
-.nosotros div img{
+    padding: 10px;
+    flex-direction: row;
+  }
+  .main_page .nosotros div {
+    width: 1000px;
+  }
+  .main_page .nosotros div img {
     width: 100%;
-}
-
-.nosotros-text{
+  }
+  .main_page .nosotros .text {
     display: flex;
     flex-direction: column;
-    align-items: column;
+    align-items: left;
     justify-content: flex-start;
-}
-
-.nosotros-text h2{
+    text-decoration: dotted;
+  }
+  .main_page .nosotros .text h2 {
     font-size: 40px;
-}
-
-.nosotros-text p{
+  }
+  .main_page .nosotros .text p {
     font-size: 25px;
-}
-
-.objetivo{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  flex-direction: column;
-}
-
-.objetivo div{
-    width: 500px;
-}
-
-.objetivo div img{
-    width: 100%;
-}
-
-.obj-text{
-    display: flex;
-    flex-direction: column;
-    align-items:left;
-    justify-content: flex-start;
-}
-
-.obj-text h2{
-    font-size: 40px;
-}
-
-.obj-text p{
-    font-size: 25px;
-}
-
-footer{
+  }
+  .footer {
     background-color: #E8C57E;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-}
-
-footer div img{
+  }
+  .footer div img {
     width: 30px;
+  }
 }
 
-
-/*media query*/
-@media screen and (min-width: 768px){
-  header{
-      flex-direction: column;
-  }
-
-  header nav ul{
-      display: flex;
-      justify-content: space-evenly;
-      gap: 10px; 
-    }
-
-  .nosotros{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      flex-direction: row;
-    } 
-
-  .nosotros div{
-      width: 500px;
-    }
-
-  .nosotros div img{
-      width: 100%;
-    }
-
-  .nosotros-text{
-      display: flex;
-      flex-direction: column;
-      align-items:left;
-      justify-content: flex-start;
-    }
-
-  .nosotros-text h2{
-      font-size: 40px;
-    }
-
-  .nosotros-text p{
-      font-size: 25px;
-    }
-  
-
-  .objetivo{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      flex-direction: row;
-    }
-    
-    .objetivo div{
-        width: 500px;
-    }
-    
-    .objetivo div img{
-        width: 100%;
-    }
-    
-    .obj-text{
-        display: flex;
-        flex-direction: column;
-        align-items:left;
-        justify-content: flex-start;
-    }
-    
-    .obj-text h2{
-        font-size: 40px;
-    }
-    
-    .obj-text p{
-        font-size: 25px;
-    }
-
-}
-
-/* navegación */
-#mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #212529;
-  }
-  #mainNav .navbar-toggler {
-    padding: 0.75rem;
-    font-size: 0.75rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  #mainNav .navbar-brand {
-    color: #ffc800;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
-    letter-spacing: 0.0625em;
-    text-transform: uppercase;
-  }
-  #mainNav .navbar-brand img {
-    height: 1.5rem;
-  }
-  #mainNav .navbar-nav .nav-item .nav-link {
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 0.95rem;
-    color: #fff;
-    letter-spacing: 0.0625em;
-  }
-  #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #ffc800;
-  }
-  
-  @media (min-width: 992px) {
-    #mainNav {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-      border: none;
-      background-color: transparent;
-      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-    }}
-    #mainNav .navbar-brand {
-      font-size: 1.5em;
-      transition: font-size 0.3s ease-in-out;
-    }
-    #mainNav .navbar-brand img {
-      height: 2rem;
-      transition: height 0.3s ease-in-out;
-    }
-    #mainNav.navbar-shrink {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      background-color: #212529;
-    }
-    #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.25em;
-    }
-    #mainNav.navbar-shrink .navbar-brand svg,
-    #mainNav.navbar-shrink .navbar-brand img {
-      height: 1.5rem;
-    }
-    #mainNav .navbar-nav .nav-item {
-      margin-right: 1rem;
-    }
-    #mainNav .navbar-nav .nav-item:last-child {
-      margin-right: 0;
-    }
-
+/*# sourceMappingURL=styles.css.map */
